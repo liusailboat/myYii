@@ -32,34 +32,40 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'frontend/runtime',
-            'frontend/web/assets',
+            'weAdmin/runtime',
+            'weAdmin/web/assets',
+            'weApi/runtime',
+            'weApi/web/assets',
+            'weWeb/runtime',
+            'weWeb/web/assets',
         ],
         'setExecutable' => [
             'yii',
             'yii_test',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
+            'weAdmin/config/main-local.php',
+            'weApi/config/main-local.php',
+            'weWeb/config/main-local.php',
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'frontend/runtime',
-            'frontend/web/assets',
+            'weAdmin/runtime',
+            'weAdmin/web/assets',
+            'weApi/runtime',
+            'weApi/web/assets',
+            'weWeb/runtime',
+            'weWeb/web/assets',
         ],
         'setExecutable' => [
             'yii',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
+            'weAdmin/config/main-local.php',
+            'weApi/config/main-local.php',
+            'weWeb/config/main-local.php',
         ],
     ],
 ];
