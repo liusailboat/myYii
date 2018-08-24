@@ -11,6 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'weApi\controllers',
+    'defaultRoute' => 'site/index',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-weApi',
@@ -44,6 +45,12 @@ return [
             ],
         ],
         */
+        // 模块
+        'modules' => [
+            'v1' => [
+                'class' => 'weApi\modules\v1\Module',
+            ],
+        ],
     ],
     'params' => $params,
 ];
